@@ -1,0 +1,49 @@
+body {
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.converter-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4b5563;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3b82f6;
+}
+
+.equals {
+    font-size: 2rem;
+    color: #9ca3af;
+}
