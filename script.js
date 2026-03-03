@@ -15,7 +15,8 @@ function convert(source) {
     const val = parseFloat(source.value);
 
     if (isNaN(val)) {
-        source === leftInput ? rightInput.value = '' : leftInput.value = '';
+        if (source === leftInput) rightInput.value = '';
+        else leftInput.value = '';
         return;
     }
 
