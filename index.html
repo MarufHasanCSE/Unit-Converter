@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Unit Converter</title>
+    <title>Glassmorphic Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="converter-card">
-        <h2>Smart Converter</h2>
-        
-        <select id="mode-selector">
-            <option value="length">Length (Meters ⇄ Feet)</option>
-            <option value="weight">Weight (KG ⇄ Lbs)</option>
-            <option value="temp">Temp (Celsius ⇄ Fahr)</option>
-        </select>
+    <div class="glass-card">
+        <header>
+            <h1>Converter</h1>
+            <select id="mode-selector">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temp">Temperature</option>
+            </select>
+        </header>
 
-        <div class="converter-body">
-            <div class="input-box">
-                <label id="label-left">Meters</label>
+        <div class="input-wrapper">
+            <div class="field">
+                <span id="label-left">Meters</span>
                 <input type="number" id="input-left" value="0">
             </div>
 
-            <div class="swap-icon">⇄</div>
+            <div class="divider">
+                <div class="line"></div>
+                <div class="icon">⇅</div>
+                <div class="line"></div>
+            </div>
 
-            <div class="input-box">
-                <label id="label-right">Feet</label>
+            <div class="field">
+                <span id="label-right">Feet</span>
                 <input type="number" id="input-right" value="0">
             </div>
         </div>
